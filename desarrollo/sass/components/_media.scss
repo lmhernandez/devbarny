@@ -1,0 +1,60 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .panel-content{
+    padding: 24px 24px;
+    
+  }
+
+  .footer{
+    &__head{
+      &--title{
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  .nav {
+    background: #edeeee29;
+  }
+  nav.container{
+    padding: 0 15px;
+  }
+  .nav div.main_list ul li a {
+    padding: 20px;
+  }
+  .slider{  
+    &__content{
+      align-items: flex-start;
+      padding: 0 7.5%;
+    }
+  }
+  .panel-content{
+    padding: 24px;    
+  }
+  .page-indicator .indicator__box {
+    padding-top: 120px;
+  }
+  .page-indicator .indicator__box {
+    padding-top: 190px;
+  }
+  .footer{
+    &__head{
+      &--title{
+        font-size: 32px;
+      }
+    }
+  }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .panel-content{
+    padding: 32px 28px 12px 28px;
+  }
+}

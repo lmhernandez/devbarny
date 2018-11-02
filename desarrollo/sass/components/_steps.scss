@@ -1,0 +1,251 @@
+/*    GENERALES   */
+.page-steps {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 0;
+}
+.page-steps .step-content {
+  margin: 0 auto;
+  
+}
+.page-steps .step-content .step-content__control {
+  text-align: center;
+  margin-bottom: 36px;
+}
+.page-steps .step-content .step-content__control .step {
+  display: inline-block;
+  margin: 5px;
+  padding: 12px;
+  background: white;
+  color: $primario;
+  border: 1px solid $primario;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-weight: bold;
+}
+.page-steps .step-content .step-content__control .step.activestep {
+  background: $primario;
+  color: white;
+}
+.page-steps .step-content .step-content__body {
+  min-height: 125px;
+  transition: height 0.5s;
+  position: relative;
+}
+.page-steps .step-content .step-content__body fieldset {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+  transition: opacity 0.25s, -webkit-transform 0.25s;
+  transition: transform 0.25s, opacity 0.25s;
+  transition: transform 0.25s, opacity 0.25s, -webkit-transform 0.25s;
+  z-index: 2;
+  border: none;
+  padding: 0;
+}
+.page-steps .step-content .step-content__body fieldset input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid black;
+}
+.page-steps .step-content .step-content__body fieldset.hidden {
+  -webkit-transform: translate(0, -50px);
+          transform: translate(0, -50px);
+  opacity: 0;
+  z-index: 1;
+}
+.page-steps .step-content .step-content__body .buttons {
+
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+}
+.buttons {
+  margin-top: 50px;
+  .button{
+    display: inline-block;
+  }
+}
+.page-steps .step-content .step-content__body .buttons .button {
+  display: inline-block;
+  background: $secundario;
+  color: $white;
+  border: 1px solid $secundario;;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 50px;
+}
+.page-steps .step-content .step-content__body .buttons .button.back {
+  background: $white;
+  color: $primario;
+  border: 1px solid $primario;;
+  padding: 10px 50px;
+}
+.page-steps .step-content .step-content__body .buttons .button:hover {
+  background: $primario;
+  color: white;
+}
+.page-steps .step-content .step-content__body .buttons .button.back, .page-steps .step-content .step-content__body .buttons .button.send {
+  display: none;
+}
+/******************************/
+.panel{
+  &--title{
+    font-family: kanit;
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  .aux-ofi{
+    padding-bottom: 5px;
+  }
+}
+.content--title{
+  font-size: 1.5rem;
+  color: $secundario;
+  font-family: kanit;
+}
+.panel-content{
+  background: #F5F5F5;
+  padding: 24px 0;
+  border-radius: 5px;
+}
+.form-check{
+  display: inline-block;
+}
+.span_check{
+  font-family: kanit;
+  font-size: 1rem;
+}
+.text-mini{
+  font-size: 12px;
+  font-family: kanit;
+  padding-top: 16px;
+}
+.box-img{
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+/*    STEPS 1    */
+
+
+/*    STEPS 2   */
+.step2-central{
+  padding-top: 24px;
+  border-left: 1px solid #c1c1c16b;
+  border-right: 1px solid  #c1c1c16b;
+  &__fila{
+    margin-bottom: 12px;
+  }
+}
+.panel{
+  &--mapa{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  }
+}
+.div2{
+  .div2__content{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 5px;
+    .panel{
+      padding: 0 16px;
+    }
+  }  
+}
+/*    STEPS 3   */
+.reserva{
+  position: relative;
+  background: #F5F5F5;
+  padding: 24px 0;
+  .box-date{
+    padding: 16px 0;
+  }
+}
+.box-label-check{
+  display: block;
+}
+.styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.styled-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+.styled-checkbox + label:before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
+}
+/*      SELECCIONADO      */
+.check-seleccionado:hover + label:before {
+  background: blue;
+}
+.check-seleccionado:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+.check-seleccionado:checked + label:before {
+  background: blue;
+}
+
+/*      BLOQUEADO      */
+.check-bloqueado:hover + label:before {
+  background: #b8b8b8;
+}
+.check-bloqueado:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+.check-bloqueado:checked + label:before {
+  background: #b8b8b8;
+}
+
+/*      OCUPADO      */
+.check-ocupado:hover + label:before {
+  background: #f35429;
+}
+.check-ocupado:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+.check-ocupado:checked + label:before {
+  background: #f35429;
+}
+
+.styled-checkbox:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+.styled-checkbox:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+.styled-checkbox:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/*    STEP 4    */
+.reserva-paquete{
+  position: relative;
+  padding: 24px 96px;
+  background: #F5F5F5;
+}
+
+

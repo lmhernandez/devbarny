@@ -1,0 +1,33 @@
+.title__page .title__page--resalt {
+  color: $secundario;
+  font-weight: 700;
+}
+
+.contactanos h4 {
+  color: #062b4e;
+  font-weight: 700;
+  position: relative;
+  margin-left: 10px; 
+}
+.contactanos h4:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border: 2px solid $secundario; 
+}
+.contactanos form input {
+  margin-top: 10px; 
+}
+.contactanos .contactanos__item span {
+  margin-left: 15px;
+  color: #374146;
+  font-weight: 700;
+  font-style: capitalize;
+}
+.contactanos .contactanos__item span i {
+  margin-right: 15px;
+  color: $secundario; 
+}

@@ -1,0 +1,86 @@
+section{
+  padding: 60px 0 20px 0;
+  min-height: 100vh;
+}
+.page-indicator {
+  background: url("../imagenes/evento3.jpg") no-repeat;
+  height: 300px;
+  width: 100%; 
+}
+.page-indicator:before {
+  content: "";
+  background: rgba(1, 46, 74, 0.75) url("../../../produccion/img/grid2.png") repeat;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0; 
+}
+.page-indicator .indicator__box {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 120px;
+  width: 90%;
+}
+.page-indicator .box--item {
+  position: relative; 
+}
+.page-indicator .box--item .indicator--left {
+  display: flex;
+  background: $primario;
+  padding: 2px; 
+}
+.page-indicator .box--item .indicator--left li {
+  background: $primario;
+  padding: 2px 5px;
+}
+.page-indicator .box--item .indicator--left li a {
+  color: white;
+  font-size: 13px; 
+}
+.page-indicator .box--item .indicator--left li:nth-child(2) {
+  background: $secundario; 
+}
+.page-indicator .box--item .indicator--right h3 {
+  color: white; 
+  font-size: 24px;
+}
+.page-indicator .box--item .indicator--right h4 {
+  font-size: 16px; 
+  color: #BDBDBD;
+}
+
+/***********************************************************
+                      FOOTER
+***********************************************************/
+.footer{
+  padding: 70px 0 0 0px;
+  background: #263238f5;
+  color: #fff;
+  margin-top: 50px;
+  &__head{
+    padding-bottom: 25px; 
+    &--title{
+      font-size: 24px;
+      padding-bottom: 16px;
+      color: $primario;
+    }
+  }
+  &__body{
+    padding-bottom: 32px;
+    .footer--item{
+      padding: 16px 0;
+    }
+    i{
+      font-size: 32px;
+      color: $primario;
+    }
+  }
+  .footer-copyright{
+    padding: 16px 0;
+    background: #263238;
+      a{
+        color: $primario;
+      }
+  }
+}

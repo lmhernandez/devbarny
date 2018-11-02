@@ -1,0 +1,66 @@
+/*DATE PICKER*/
+.fecha{
+  text-align: center;
+  font-size: 18px;
+  color: $parrafo;
+}
+.ui-datepicker.ui-widget.ui-widget-content {
+	background: $color_secundario;
+}
+.ui-datepicker-header.ui-widget-header {
+	background: $color_secundario;
+	border: none;
+	color: white;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active,
+	a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+	{
+	border: none !important;
+	background: white !important;
+	font-weight: normal !important;
+	color: red !important;
+	border-radius: 4px !important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default,
+	.ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover,
+	html .ui-button.ui-state-disabled:active {
+	border: 1px solid $color_secundario !important;
+	background: $color_secundario !important;
+	font-weight: normal !important;
+	color: #ffffff !important;
+}
+
+.ui-widget-content {
+	border: 1px solid white !important;
+	color: #ffffff !important
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active,
+	a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+	{
+  background: white !important;
+  color: $color_secundario !important;
+}
+/*  Fin date picker */
+/*SELECT2*/
+.chosen-container {
+  width: 100% !important;
+}
+.page-steps .form-group{
+	margin-bottom: 36px;
+}
+/*  Fin select2 */
+input.form-control, select.custom-select{
+	height: 50px;
+	font-size: 18px;
+	font-family: kanit;
+	font-weight: 300;
+	color: #ccc;
+	-webkit-text-fill-color: #ccc;
+}
+
+input.form-control:focus, .custom-select:focus {
+	border-color: #39e1d024;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #39e1d024;
+}
